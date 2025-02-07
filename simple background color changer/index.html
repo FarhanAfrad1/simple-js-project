@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Changer</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        align-items: center;
+      }
+      .button {
+        height: 120px;
+        width: 120px;
+        cursor: pointer;
+        display: inline-block;
+        border: 2px solid #212121;
+        transition: all 0.5s;
+      }
+      .button:hover{
+        transform: scale(95%);
+      }
+      
+      #grey {
+        background-color: grey;
+      }
+      #white {
+        background-color: white;
+      }
+      #skyblue {
+        background-color: skyblue;
+      }
+      #yellow {
+        background-color: yellow;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <h1>Color Scheme Switcher</h1>
+
+    <div>
+      <span class="button" id="grey"></span>
+      <span class="button" id="white"></span>
+      <span class="button" id="skyblue"></span>
+      <span class="button" id="yellow"></span>
+    </div>
+
+    <h2>
+      Try clicking one of the colors above to change the background color of
+      this page!
+    </h2>
+
+    <script src="app.js"></script>
+  </body>
+</html>
