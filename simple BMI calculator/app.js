@@ -1,7 +1,8 @@
 
 const result = document.querySelector('.result');
-document.querySelector('button').addEventListener('click',function(e){
-    
+document.querySelector('form').addEventListener('submit',function(e){
+    e.preventDefault();
+    console.log(e.target)
     const height = parseFloat(document.getElementById('height').value);
     const weight = parseFloat(document.getElementById('weight').value);
 
